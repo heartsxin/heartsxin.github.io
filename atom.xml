@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>heartsxin的博客</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2017-05-27T14:09:42.042Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>heartsxin</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>20170527blog</title>
+    <link href="http://yoursite.com/2017/05/27/20170527blog/"/>
+    <id>http://yoursite.com/2017/05/27/20170527blog/</id>
+    <published>2017-05-27T11:57:47.000Z</published>
+    <updated>2017-05-27T14:09:42.042Z</updated>
+    
+    <content type="html"><![CDATA[<p>这是heartsxin的第二个博客<br><a id="more"></a></p>
+<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><h3 id="记录一下"><a href="#记录一下" class="headerlink" title="记录一下"></a>记录一下</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">如何将首页进行相应的设置，只显示部分，之后点击更多的时候才完整显示</div></pre></td></tr></table></figure>
+<p>友情链接: <a href="http://www.jianshu.com/c/7fafdc0abb5b" target="_blank" rel="external">未知</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      你对本页的描述
+    
+    </summary>
+    
+      <category term="default" scheme="http://yoursite.com/categories/default/"/>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Heartsxin的博客</title>
+    <link href="http://yoursite.com/2017/05/25/hello-world/"/>
+    <id>http://yoursite.com/2017/05/25/hello-world/</id>
+    <published>2017-05-25T01:43:13.074Z</published>
+    <updated>2017-05-27T14:09:39.070Z</updated>
+    
+    <content type="html"><![CDATA[<p>这是heartsxin的第一个博客</p>
+<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><h3 id="记录一下"><a href="#记录一下" class="headerlink" title="记录一下"></a>记录一下</h3><a id="more"></a>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">用github+hexo制作，从网上下载了一些精美的模板</div></pre></td></tr></table></figure>
+<p>友情链接: <a href="http://www.jianshu.com/c/7fafdc0abb5b" target="_blank" rel="external">HEXO</a></p>
+<h3 id="后续功能"><a href="#后续功能" class="headerlink" title="后续功能"></a>后续功能</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">添加登陆、留言等功能</div></pre></td></tr></table></figure>
+<p>友情链接: <a href="http://www.jianshu.com/p/d95cff938277" target="_blank" rel="external">简书</a></p>
+<h3 id="运用七牛进行图片存储"><a href="#运用七牛进行图片存储" class="headerlink" title="运用七牛进行图片存储"></a>运用七牛进行图片存储</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">用来将文件存储到网上，注册七牛账号验证身份，将可以获取免费的存储空间，10G</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://developer.qiniu.com/kodo/kb/1321/how-to-acquire-the-outside-storage-file-links" target="_blank" rel="external">七牛</a></p>
+<h3 id="原始的博客模版"><a href="#原始的博客模版" class="headerlink" title="原始的博客模版"></a>原始的博客模版</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">通过这个模版进行的改造，通过这个模版可以学习很多东西，非常感谢博主</div></pre></td></tr></table></figure>
+<p>More info: <a href="http://blog.smackdown.gebilaowu.cn/2015/05/25/newHexo/" target="_blank" rel="external">smackdown模版链接</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      你对本页的描述
+    
+    </summary>
+    
+      <category term="default" scheme="http://yoursite.com/categories/default/"/>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>试试状态</title>
+    <link href="http://yoursite.com/2013/11/22/%E8%AF%95%E8%AF%95/"/>
+    <id>http://yoursite.com/2013/11/22/试试/</id>
+    <published>2013-11-22T09:11:54.000Z</published>
+    <updated>2017-05-27T14:08:36.660Z</updated>
+    
+    <content type="html"><![CDATA[<p>这是heartsxin的第三个博客页面</p>
+<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><h3 id="记录一下"><a href="#记录一下" class="headerlink" title="记录一下"></a>记录一下</h3><a id="more"></a>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">page是scaffolds中的一个模版</div><div class="line">文章摘要:</div><div class="line">在需要显示摘要的地方添加如下代码即可：</div><div class="line">以上是摘要</div><div class="line">以下是余下全文</div><div class="line">more以上内容即是文章摘要，在主页显示，more以下内容点击『&gt; Read More』链接打开全文才显示。</div><div class="line">hexo中所有文件的编码格式均是UTF-8。</div></pre></td></tr></table></figure>
+<p>友情链接: <a href="http://www.jianshu.com/c/7fafdc0abb5b" target="_blank" rel="external">未知</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      你对本页的描述
+    
+    </summary>
+    
+      <category term="default" scheme="http://yoursite.com/categories/default/"/>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+  </entry>
+  
+</feed>
