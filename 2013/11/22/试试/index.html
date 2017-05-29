@@ -310,15 +310,27 @@
 
 
 
-<section class="comments" id="comments">
-    <!-- UY BEGIN -->
-	<div id="uyan_frame"></div>
-	<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2134958"></script>
-	<!-- UY END -->
-</section>
 
 
 
+    <div id="cloud-tie-wrapper" class="comments cloud-tie-wrapper"></div>
+    <script>
+    var cloudTieConfig = {
+        url: 'http://yoursite.com/2013/11/22/试试/index.html',
+        sourceId: '试试',
+        productKey: 'true',
+        target: 'cloud-tie-wrapper',
+        pcFiles: [
+            '//unpkg.com/hexo-theme-material-indigo@latest/css/cloudTie/pc.css',
+            '//unpkg.com/hexo-theme-material-indigo@latest/js/cloudTie/pc.min.js',
+        ],
+        mobileFiles: [
+            '//unpkg.com/hexo-theme-material-indigo@latest/css/cloudTie/mobile.css',
+            '//unpkg.com/hexo-theme-material-indigo@latest/js/cloudTie/mobile.min.js'
+        ]
+    };
+    </script>
+    <script src="//unpkg.com/hexo-theme-material-indigo@latest/js/cloudTie/loader.min.js"></script>
 
 
 
