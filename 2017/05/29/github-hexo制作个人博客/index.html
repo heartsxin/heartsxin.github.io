@@ -34,7 +34,7 @@
 <meta property="og:image" content="http://oqlrsmf3l.bkt.clouddn.com/image/blog/github+hexo%E5%88%B6%E4%BD%9C%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2node_js%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE02.png">
 <meta property="og:image" content="http://oqlrsmf3l.bkt.clouddn.com/image/blog/github+hexo%E5%88%B6%E4%BD%9C%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2node_js%E6%B5%8B%E8%AF%95.png">
 <meta property="og:image" content="http://oqlrsmf3l.bkt.clouddn.com/image/blog/github+hexo%E5%88%B6%E4%BD%9C%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2hexo%E5%8D%9A%E5%AE%A2%E5%88%9D%E5%A7%8B.png">
-<meta property="og:updated_time" content="2017-05-29T15:35:02.377Z">
+<meta property="og:updated_time" content="2017-05-29T15:36:49.601Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="github+hexo制作个人博客">
 <meta name="twitter:description" content="自己用github+hexo搭建个人博客，记录一下，互相学习">
@@ -169,7 +169,7 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap" id="post-toc">
             <h4>文章导航</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#前期准备"><span class="post-toc-text">前期准备</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#注册github账号"><span class="post-toc-text">注册github账号</span></a></li></ol></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#前期准备"><span class="post-toc-text">前期准备</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#注册github账号"><span class="post-toc-text">注册github账号</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#安装Hexo"><span class="post-toc-text">安装Hexo</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#安装Node-js"><span class="post-toc-text">安装Node.js</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#安装Hexo-1"><span class="post-toc-text">安装Hexo</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#第一步安装Hexo"><span class="post-toc-text">第一步安装Hexo</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#第二步初始化"><span class="post-toc-text">第二步初始化</span></a></li></ol></li></ol></li></ol></li></ol>
         </nav>
     </aside>
     
@@ -215,10 +215,9 @@
                 </div>
                 <div class="image-caption">git</div>
             </figure><br>这位大神已经做的很不错，我就是在他的<a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">廖雪峰</a>博客才懂了一些git的用法、</p>
-<p>###安装Hexo</p>
-<blockquote>
+<h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><blockquote>
 <p>Hexo是基于Nodejs的静态博客系统，通过MackDowd编辑的.md文件会生成静态的html文件，所以在安装Hexo之前需要安装Nodejs</p>
-<p>####安装Node.js<br>到官网下载<a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js官网</a>直接下载，按照步骤直接安装即可。<br>说明：这里的环境配置主要配置的是npm安装的全局模块所在的路径，以及缓存cache的路径，之所以要配置，是因为以后在执行类似：npm install express [-g] （后面的可选参数-g，g代表global全局安装的意思）的安装语句时，会将安装的模块安装到【C:\Users\用户名\AppData\Roaming\npm】路径中，占C盘空间。<br>例如：我希望将全模块所在路径和缓存路径放在我node.js安装的文件夹中，则在我安装的文件夹【D:\Develop\nodejs】下创建两个文件夹【node_global】及【node_cache】如下图：</p>
+<h4 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h4><p>到官网下载<a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js官网</a>直接下载，按照步骤直接安装即可。<br>说明：这里的环境配置主要配置的是npm安装的全局模块所在的路径，以及缓存cache的路径，之所以要配置，是因为以后在执行类似：npm install express [-g] （后面的可选参数-g，g代表global全局安装的意思）的安装语句时，会将安装的模块安装到【C:\Users\用户名\AppData\Roaming\npm】路径中，占C盘空间。<br>例如：我希望将全模块所在路径和缓存路径放在我node.js安装的文件夹中，则在我安装的文件夹【D:\Develop\nodejs】下创建两个文件夹【node_global】及【node_cache】如下图：</p>
 </blockquote>
 <figure class="image-bubble">
                 <div class="img-lightbox">
@@ -253,10 +252,10 @@ npm config set cache &quot;D:\Develop\nodejs\node_cache&quot;
                 <div class="image-caption">enter image description here</div>
             </figure>
 <p>通过npm安装模块时都是去国外的镜像下载的，有的时候由于网络原因会导致安装模块失败，静静等待吧…</p>
-<p>####安装Hexo<br>搭建好以上环境之后打开Git Bssh然后输入命令</p>
-<p>#####第一步安装Hexo<br>可以先去<a href="https://hexo.io/zh-cn/" target="_blank" rel="external">Hexo</a>官网去看看，下面的命令就是安装Hexo</p>
+<h4 id="安装Hexo-1"><a href="#安装Hexo-1" class="headerlink" title="安装Hexo"></a>安装Hexo</h4><p>搭建好以上环境之后打开Git Bssh然后输入命令</p>
+<h5 id="第一步安装Hexo"><a href="#第一步安装Hexo" class="headerlink" title="第一步安装Hexo"></a>第一步安装Hexo</h5><p>可以先去<a href="https://hexo.io/zh-cn/" target="_blank" rel="external">Hexo</a>官网去看看，下面的命令就是安装Hexo</p>
 <pre><code>npm install hexo-cli -g #安装hexo
-</code></pre><p>#####第二步初始化<br>现在新建你博客要存储的文件夹，如：“某位置/blog”，然后在该文件夹下右击鼠标，选择Git Bash Here，然后输入如下命令：<br><strong>初始化</strong>    </p>
+</code></pre><h5 id="第二步初始化"><a href="#第二步初始化" class="headerlink" title="第二步初始化"></a>第二步初始化</h5><p>现在新建你博客要存储的文件夹，如：“某位置/blog”，然后在该文件夹下右击鼠标，选择Git Bash Here，然后输入如下命令：<br><strong>初始化</strong>    </p>
 <pre><code>hexo init
 </code></pre><p>然后输入</p>
 <pre><code>npm install
@@ -278,7 +277,7 @@ npm config set cache &quot;D:\Develop\nodejs\node_cache&quot;
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2017-05-29T15:35:02.377Z" itemprop="dateUpdated">2017-05-29 23:35:02</time>
+    最后更新时间：<time datetime="2017-05-29T15:36:49.601Z" itemprop="dateUpdated">2017-05-29 23:36:49</time>
 </span><br>
 
 
