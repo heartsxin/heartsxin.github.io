@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>github+hexo制作个人博客 | heartsxin | heartsxin的博客</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="github,hexo">
+    <meta name="description" content="自己用github+hexo搭建个人博客，记录一下，互相学习">
+<meta name="keywords" content="github,hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="github+hexo制作个人博客">
+<meta property="og:url" content="https://heartsxin.github.io/2017/05/29/github-hexo制作个人博客/index.html">
+<meta property="og:site_name" content="heartsxin">
+<meta property="og:description" content="自己用github+hexo搭建个人博客，记录一下，互相学习">
+<meta property="og:image" content="http://oqlrsmf3l.bkt.clouddn.com/%E5%88%9B%E5%BB%BAgithubpage.png">
+<meta property="og:image" content="http://oqlrsmf3l.bkt.clouddn.com/image/blog/github+hexo%E5%88%B6%E4%BD%9C%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%9C%AC%E5%9C%B0git%E8%BD%AF%E4%BB%B6.png">
+<meta property="og:image" content="http://oqlrsmf3l.bkt.clouddn.com/image/blog/github+hexo%E5%88%B6%E4%BD%9C%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2node_js%E6%96%87%E4%BB%B6%E5%A4%B9.png">
+<meta property="og:image" content="http://oqlrsmf3l.bkt.clouddn.com/image/blog/github+hexo%E5%88%B6%E4%BD%9C%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2node_js%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE.png">
+<meta property="og:image" content="http://oqlrsmf3l.bkt.clouddn.com/image/blog/github+hexo%E5%88%B6%E4%BD%9C%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2node_js%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE02.png">
+<meta property="og:image" content="http://oqlrsmf3l.bkt.clouddn.com/image/blog/github+hexo%E5%88%B6%E4%BD%9C%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2node_js%E6%B5%8B%E8%AF%95.png">
+<meta property="og:image" content="http://oqlrsmf3l.bkt.clouddn.com/image/blog/github+hexo%E5%88%B6%E4%BD%9C%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2hexo%E5%8D%9A%E5%AE%A2%E5%88%9D%E5%A7%8B.png">
+<meta property="og:updated_time" content="2017-05-29T15:27:37.183Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="github+hexo制作个人博客">
+<meta name="twitter:description" content="自己用github+hexo搭建个人博客，记录一下，互相学习">
+<meta name="twitter:image" content="http://oqlrsmf3l.bkt.clouddn.com/%E5%88%9B%E5%BB%BAgithubpage.png">
+    
+        <link rel="alternate" type="application/atom+xml" title="heartsxin" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/heartsxin" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">heartsxin</h5>
+          <a href="mailto:1258740695@qq.com" title="1258740695@qq.com" class="mail">1258740695@qq.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/heartsxin" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="http://weibo.com/6222952131/profile?topnav=1&wvr=6&is_all=1" target="_blank" >
+                <i class="icon icon-lg icon-weibo"></i>
+                微博
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">github+hexo制作个人博客</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">github+hexo制作个人博客</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-05-29T12:24:59.000Z" itemprop="datePublished" class="page-time">
+  2017-05-29
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/study/">study</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>文章导航</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#前期准备"><span class="post-toc-text">前期准备</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#注册github账号"><span class="post-toc-text">注册github账号</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-github-hexo制作个人博客"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">github+hexo制作个人博客</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017-05-29 20:24:59" datetime="2017-05-29T12:24:59.000Z"  itemprop="datePublished">2017-05-29</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/study/">study</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+            
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <p>通过github的代码托管和hexo搭建个人博客<br><a id="more"></a></p>
+<h2 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h2><p>  首先要把准备工作做好，前期的账号注册、软件安装、环境搭建</p>
+<h3 id="注册github账号"><a href="#注册github账号" class="headerlink" title="注册github账号"></a>注册github账号</h3><p>直接到<a href="https://github.com" target="_blank" rel="external">github官网</a>注册账号即可<br><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://oqlrsmf3l.bkt.clouddn.com/%E5%88%9B%E5%BB%BAgithubpage.png" alt="github Page" title="">
+                </div>
+                <div class="image-caption">github Page</div>
+            </figure><br>new repository，Repository name填写的和你的用户名相同，我觉得这个应该就是你的github Page了，我生成的链接 <a href="https://heartsxin.github.io/">https://heartsxin.github.io/</a>。</p>
+<blockquote>
+<p>在此之前你要现在本地安装了git，我现在也不是很会用git，初学者而已，按照教程一步步做的。安装很简单用起来有点不会，毕竟都是英语的，多我来说很吃力。</p>
+</blockquote>
+<p>这是本地安装的git和github桌面版<br><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://oqlrsmf3l.bkt.clouddn.com/image/blog/github+hexo%E5%88%B6%E4%BD%9C%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%9C%AC%E5%9C%B0git%E8%BD%AF%E4%BB%B6.png" alt="git" title="">
+                </div>
+                <div class="image-caption">git</div>
+            </figure><br>这位大神已经做的很不错，我就是在他的<a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">廖雪峰</a>博客才懂了一些git的用法、</p>
+<p>###安装Hexo</p>
+<blockquote>
+<p>Hexo是基于Nodejs的静态博客系统，通过MackDowd编辑的.md文件会生成静态的html文件，所以在安装Hexo之前需要安装Nodejs</p>
+<p>####安装Node.js<br>到官网下载<a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js官网</a>直接下载，按照步骤直接安装即可。<br>说明：这里的环境配置主要配置的是npm安装的全局模块所在的路径，以及缓存cache的路径，之所以要配置，是因为以后在执行类似：npm install express [-g] （后面的可选参数-g，g代表global全局安装的意思）的安装语句时，会将安装的模块安装到【C:\Users\用户名\AppData\Roaming\npm】路径中，占C盘空间。<br>例如：我希望将全模块所在路径和缓存路径放在我node.js安装的文件夹中，则在我安装的文件夹【D:\Develop\nodejs】下创建两个文件夹【node_global】及【node_cache】如下图：</p>
+</blockquote>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://oqlrsmf3l.bkt.clouddn.com/image/blog/github+hexo%E5%88%B6%E4%BD%9C%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2node_js%E6%96%87%E4%BB%B6%E5%A4%B9.png" alt="enter image description here" title="">
+                </div>
+                <div class="image-caption">enter image description here</div>
+            </figure>
+<p>新建文件夹之后在CMD窗口输入如下命令：</p>
+<pre><code>npm config set prefix &quot;D:\Develop\nodejs\node_global&quot;
+npm config set cache &quot;D:\Develop\nodejs\node_cache&quot;
+</code></pre><p>输入代码后在新建的文件夹里面会生成相应的文件后文件夹，然后配置相应的环境变量，如下图所示：<br><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://oqlrsmf3l.bkt.clouddn.com/image/blog/github+hexo%E5%88%B6%E4%BD%9C%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2node_js%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE.png" alt="enter image description here" title="">
+                </div>
+                <div class="image-caption">enter image description here</div>
+            </figure><br><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://oqlrsmf3l.bkt.clouddn.com/image/blog/github+hexo%E5%88%B6%E4%BD%9C%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2node_js%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE02.png" alt="enter image description here" title="">
+                </div>
+                <div class="image-caption">enter image description here</div>
+            </figure></p>
+<p>配置完后，安装个module测试下，我们就安装最常用的express模块，打开cmd窗口，<br>输入如下命令进行模块的全局安装：</p>
+<pre><code>npm install express -g     # -g是全局安装的意思
+</code></pre><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://oqlrsmf3l.bkt.clouddn.com/image/blog/github+hexo%E5%88%B6%E4%BD%9C%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2node_js%E6%B5%8B%E8%AF%95.png" alt="enter image description here" title="">
+                </div>
+                <div class="image-caption">enter image description here</div>
+            </figure>
+<p>通过npm安装模块时都是去国外的镜像下载的，有的时候由于网络原因会导致安装模块失败，静静等待吧…</p>
+<p>####安装Hexo<br>搭建好以上环境之后打开Git Bssh然后输入命令</p>
+<p>#####第一步安装Hexo<br>可以先去<a href="https://hexo.io/zh-cn/" target="_blank" rel="external">Hexo</a>官网去看看，下面的命令就是安装Hexo</p>
+<pre><code>npm install hexo-cli -g #安装hexo
+</code></pre><p>#####第二步初始化<br>现在新建你博客要存储的文件夹，如：“某位置/blog”，然后在该文件夹下右击鼠标，选择Git Bash Here，然后输入如下命令：<br><strong>初始化</strong>    </p>
+<pre><code>hexo init
+</code></pre><p>然后输入</p>
+<pre><code>npm install
+</code></pre><p> <strong>生成静态页面</strong><br>输入以下代码生成静态html代码，它是“hexo generate”的简写</p>
+<pre><code>hexo g 
+</code></pre><p><strong>本地启动</strong><br>输入以下代码本地启动服务，它是”hexo server“ 的简写</p>
+<pre><code>hexo s
+</code></pre><p>此时个人博客已经初步建成，在浏览器输入<a href="https://localhost:4000" target="_blank" rel="external"> https://localhost:4000</a>即可访问你的博客了，试试看…<br>它可能是这个样子，如下：<br><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://oqlrsmf3l.bkt.clouddn.com/image/blog/github+hexo%E5%88%B6%E4%BD%9C%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2hexo%E5%8D%9A%E5%AE%A2%E5%88%9D%E5%A7%8B.png" alt="enter image description here" title="">
+                </div>
+                <div class="image-caption">enter image description here</div>
+            </figure><br><strong>这样已经初步完成个人博客的初步搭建</strong></p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2017-05-29T15:27:37.183Z" itemprop="dateUpdated">2017-05-29 23:27:37</time>
+</span><br>
+
+
+        
+        有什么不足的地方欢迎大家吐槽，示例：<a href="/2017/05/29/github-hexo制作个人博客/" target="_blank" rel="external">https://heartsxin.github.io/2017/05/29/github-hexo制作个人博客/</a>
+        
+    </div>
+    <footer>
+        <a href="https://heartsxin.github.io">
+            <img src="/img/avatar.jpg" alt="heartsxin">
+            heartsxin
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/">github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://heartsxin.github.io/2017/05/29/github-hexo制作个人博客/&title=《github+hexo制作个人博客》 — heartsxin&pic=https://heartsxin.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://heartsxin.github.io/2017/05/29/github-hexo制作个人博客/&title=《github+hexo制作个人博客》 — heartsxin&source=通过github的代码托管和hexo搭建个人博客" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+	  <!-- 注释了facebook和twitter
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://heartsxin.github.io/2017/05/29/github-hexo制作个人博客/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《github+hexo制作个人博客》 — heartsxin&url=https://heartsxin.github.io/2017/05/29/github-hexo制作个人博客/&via=https://heartsxin.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+	    -->
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://heartsxin.github.io/2017/05/29/github-hexo制作个人博客/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2017/05/29/MarkDown学习笔记/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">MarkDown学习笔记</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+<section class="comments" id="comments">
+    <!-- UY BEGIN -->
+	<div id="uyan_frame"></div>
+	<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2134958"></script>
+	<!-- UY END -->
+</section>
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢大爷~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <ul class="reward-items">
+        
+        <li>
+            <img src="/img/wechat.jpg" title="微信打赏二维码" alt="微信打赏二维码">
+            <p>微信</p>
+        </li>
+        
+
+        
+        <li>
+            <img src="/img/alipay.jpg" title="支付宝打赏二维码" alt="支付宝打赏二维码">
+            <p>支付宝</p>
+        </li>
+        
+    </ul>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p>
+            <span>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></span>
+            <span>heartsxin &copy; 2017</span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://heartsxin.github.io/2017/05/29/github-hexo制作个人博客/&title=《github+hexo制作个人博客》 — heartsxin&pic=https://heartsxin.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://heartsxin.github.io/2017/05/29/github-hexo制作个人博客/&title=《github+hexo制作个人博客》 — heartsxin&source=通过github的代码托管和hexo搭建个人博客" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+	  <!-- 注释了facebook和twitter
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://heartsxin.github.io/2017/05/29/github-hexo制作个人博客/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《github+hexo制作个人博客》 — heartsxin&url=https://heartsxin.github.io/2017/05/29/github-hexo制作个人博客/&via=https://heartsxin.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+	    -->
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://heartsxin.github.io/2017/05/29/github-hexo制作个人博客/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACuklEQVR42u3a0WrjQAwF0Pz/T6fQ1+LkXsmTzcLxU6COx2cK0kTS4xFfz9/r7+erO6/u//v56mnPi+tx4sLDw8MbvfrrxyW85HXzd0i2LNoCPDw8vGO8JBkky+d/TQL9bIvx8PDwvoc3OxYnr94mDDw8PLz/hdcedmdVgk1BBA8PD++TvKQY8Rq5Ac8KIjfXWvDw8PBi3qYB9q8+f6i/h4eHh1eG4yTgzgJ0/q3n4sLDw8M7wbsKuPcOQs22qS15XL4JHh4e3q28TbhPXiIP7u1WJgURPDw8vBO8TSMqSScttW13RY06PDw8vFt5q5N4XOTNkfsaLB4eHt5p3qb5lIf15Fv5E+pmGB4eHt6tvBbQYpKhq1kqisB4eHh4H+FtAve+PTZLJJfvhoeHh3eMlyA3LbE8rOfbHW0QHh4e3gFe0SVbtMHyVWbjCMV/Eg8PD2/NS46q7UvM2LMRhKgYgYeHh3eYty89vD74FofgdYrCw8PDO8FrhwDyZtWs6ZUnqmLQAQ8PD+9WXr5MW6gtqiDlkboY/8LDw8M7xkvKEG0DLAnoszRQrI6Hh4d3jNeWHvLmVl4TmBWI32w6Hh4e3gFeXjjIS7HtPW0qqosgeHh4eId5bYN/Vq6dpZZ23AEPDw/vBG8TsmeN/DyRtCuuprfw8PDwRrw2MSSBftMqS5LQmyM7Hh4e3gHepvy6aU3NirzDmI+Hh4d3K28WamdDA3kTa5Ny3vT38PDw8G7l5c2nNmG0pY3bVsTDw8M7wJsVHdrj8qagkK/72Fx4eHh4Ja8dckrCehvQN8MKb56Mh4eHd4yX/8ifDWbl9dW7ShJ4eHh438DLB6fysYD2znrr8fDw8L6SNztq50WHJGFcro6Hh4d3jJc3+NsAvS/Ftnfi4eHhnea1P/XbVNF2pjZNuBv6e3h4eHivVvkBDTpUueIjGqsAAAAASUVORK5CYII=" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '死鬼去哪里了！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)咦!又好了!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>

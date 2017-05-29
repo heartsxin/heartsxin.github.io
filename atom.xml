@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://heartsxin.github.io/"/>
-  <updated>2017-05-29T11:37:24.986Z</updated>
+  <updated>2017-05-29T15:27:37.183Z</updated>
   <id>https://heartsxin.github.io/</id>
   
   <author>
@@ -14,6 +14,105 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>github+hexo制作个人博客</title>
+    <link href="https://heartsxin.github.io/2017/05/29/github-hexo%E5%88%B6%E4%BD%9C%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>https://heartsxin.github.io/2017/05/29/github-hexo制作个人博客/</id>
+    <published>2017-05-29T12:24:59.000Z</published>
+    <updated>2017-05-29T15:27:37.183Z</updated>
+    
+    <content type="html"><![CDATA[<p>通过github的代码托管和hexo搭建个人博客<br><a id="more"></a></p>
+<h2 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h2><p>  首先要把准备工作做好，前期的账号注册、软件安装、环境搭建</p>
+<h3 id="注册github账号"><a href="#注册github账号" class="headerlink" title="注册github账号"></a>注册github账号</h3><p>直接到<a href="https://github.com" target="_blank" rel="external">github官网</a>注册账号即可<br><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://oqlrsmf3l.bkt.clouddn.com/%E5%88%9B%E5%BB%BAgithubpage.png" alt="github Page" title="">
+                </div>
+                <div class="image-caption">github Page</div>
+            </figure><br>new repository，Repository name填写的和你的用户名相同，我觉得这个应该就是你的github Page了，我生成的链接 <a href="https://heartsxin.github.io/">https://heartsxin.github.io/</a>。</p>
+<blockquote>
+<p>在此之前你要现在本地安装了git，我现在也不是很会用git，初学者而已，按照教程一步步做的。安装很简单用起来有点不会，毕竟都是英语的，多我来说很吃力。</p>
+</blockquote>
+<p>这是本地安装的git和github桌面版<br><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://oqlrsmf3l.bkt.clouddn.com/image/blog/github+hexo%E5%88%B6%E4%BD%9C%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%9C%AC%E5%9C%B0git%E8%BD%AF%E4%BB%B6.png" alt="git" title="">
+                </div>
+                <div class="image-caption">git</div>
+            </figure><br>这位大神已经做的很不错，我就是在他的<a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">廖雪峰</a>博客才懂了一些git的用法、</p>
+<p>###安装Hexo</p>
+<blockquote>
+<p>Hexo是基于Nodejs的静态博客系统，通过MackDowd编辑的.md文件会生成静态的html文件，所以在安装Hexo之前需要安装Nodejs</p>
+<p>####安装Node.js<br>到官网下载<a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js官网</a>直接下载，按照步骤直接安装即可。<br>说明：这里的环境配置主要配置的是npm安装的全局模块所在的路径，以及缓存cache的路径，之所以要配置，是因为以后在执行类似：npm install express [-g] （后面的可选参数-g，g代表global全局安装的意思）的安装语句时，会将安装的模块安装到【C:\Users\用户名\AppData\Roaming\npm】路径中，占C盘空间。<br>例如：我希望将全模块所在路径和缓存路径放在我node.js安装的文件夹中，则在我安装的文件夹【D:\Develop\nodejs】下创建两个文件夹【node_global】及【node_cache】如下图：</p>
+</blockquote>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://oqlrsmf3l.bkt.clouddn.com/image/blog/github+hexo%E5%88%B6%E4%BD%9C%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2node_js%E6%96%87%E4%BB%B6%E5%A4%B9.png" alt="enter image description here" title="">
+                </div>
+                <div class="image-caption">enter image description here</div>
+            </figure>
+<p>新建文件夹之后在CMD窗口输入如下命令：</p>
+<pre><code>npm config set prefix &quot;D:\Develop\nodejs\node_global&quot;
+npm config set cache &quot;D:\Develop\nodejs\node_cache&quot;
+</code></pre><p>输入代码后在新建的文件夹里面会生成相应的文件后文件夹，然后配置相应的环境变量，如下图所示：<br><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://oqlrsmf3l.bkt.clouddn.com/image/blog/github+hexo%E5%88%B6%E4%BD%9C%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2node_js%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE.png" alt="enter image description here" title="">
+                </div>
+                <div class="image-caption">enter image description here</div>
+            </figure><br><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://oqlrsmf3l.bkt.clouddn.com/image/blog/github+hexo%E5%88%B6%E4%BD%9C%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2node_js%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE02.png" alt="enter image description here" title="">
+                </div>
+                <div class="image-caption">enter image description here</div>
+            </figure></p>
+<p>配置完后，安装个module测试下，我们就安装最常用的express模块，打开cmd窗口，<br>输入如下命令进行模块的全局安装：</p>
+<pre><code>npm install express -g     # -g是全局安装的意思
+</code></pre><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://oqlrsmf3l.bkt.clouddn.com/image/blog/github+hexo%E5%88%B6%E4%BD%9C%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2node_js%E6%B5%8B%E8%AF%95.png" alt="enter image description here" title="">
+                </div>
+                <div class="image-caption">enter image description here</div>
+            </figure>
+<p>通过npm安装模块时都是去国外的镜像下载的，有的时候由于网络原因会导致安装模块失败，静静等待吧…</p>
+<p>####安装Hexo<br>搭建好以上环境之后打开Git Bssh然后输入命令</p>
+<p>#####第一步安装Hexo<br>可以先去<a href="https://hexo.io/zh-cn/" target="_blank" rel="external">Hexo</a>官网去看看，下面的命令就是安装Hexo</p>
+<pre><code>npm install hexo-cli -g #安装hexo
+</code></pre><p>#####第二步初始化<br>现在新建你博客要存储的文件夹，如：“某位置/blog”，然后在该文件夹下右击鼠标，选择Git Bash Here，然后输入如下命令：<br><strong>初始化</strong>    </p>
+<pre><code>hexo init
+</code></pre><p>然后输入</p>
+<pre><code>npm install
+</code></pre><p> <strong>生成静态页面</strong><br>输入以下代码生成静态html代码，它是“hexo generate”的简写</p>
+<pre><code>hexo g 
+</code></pre><p><strong>本地启动</strong><br>输入以下代码本地启动服务，它是”hexo server“ 的简写</p>
+<pre><code>hexo s
+</code></pre><p>此时个人博客已经初步建成，在浏览器输入<a href="https://localhost:4000" target="_blank" rel="external"> https://localhost:4000</a>即可访问你的博客了，试试看…<br>它可能是这个样子，如下：<br><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://oqlrsmf3l.bkt.clouddn.com/image/blog/github+hexo%E5%88%B6%E4%BD%9C%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2hexo%E5%8D%9A%E5%AE%A2%E5%88%9D%E5%A7%8B.png" alt="enter image description here" title="">
+                </div>
+                <div class="image-caption">enter image description here</div>
+            </figure><br><strong>这样已经初步完成个人博客的初步搭建</strong></p>
+]]></content>
+    
+    <summary type="html">
+    
+      自己用github+hexo搭建个人博客，记录一下，互相学习
+    
+    </summary>
+    
+      <category term="study" scheme="https://heartsxin.github.io/categories/study/"/>
+    
+    
+      <category term="github" scheme="https://heartsxin.github.io/tags/github/"/>
+    
+      <category term="hexo" scheme="https://heartsxin.github.io/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>MarkDown学习笔记</title>
