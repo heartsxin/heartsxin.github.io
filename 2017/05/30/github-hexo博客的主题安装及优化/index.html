@@ -19,9 +19,9 @@
     <meta name="theme-color" content="#3F51B5">
     
     
-    <meta name="keywords" content="github,hexo,study">
+    <meta name="keywords" content="study,github,hexo">
     <meta name="description" content="github+hexo制作的个人博客的主题更换及美化">
-<meta name="keywords" content="github,hexo,study">
+<meta name="keywords" content="study,github,hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="github+hexo博客的主题安装及优化">
 <meta property="og:url" content="https://heartsxin.github.io/2017/05/30/github-hexo博客的主题安装及优化/index.html">
@@ -32,7 +32,7 @@
 <meta property="og:image" content="http://oqlrsmf3l.bkt.clouddn.com/image/blog/github+hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BC%98%E5%8C%96livere-get-code.png">
 <meta property="og:image" content="http://oqlrsmf3l.bkt.clouddn.com/image/blog/github+hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BC%98%E5%8C%96add_livere01.png">
 <meta property="og:image" content="http://oqlrsmf3l.bkt.clouddn.com/image/blog/github+hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BC%98%E5%8C%96add_livere02.png">
-<meta property="og:updated_time" content="2017-05-30T14:17:20.504Z">
+<meta property="og:updated_time" content="2017-05-30T14:38:08.943Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="github+hexo博客的主题安装及优化">
 <meta name="twitter:description" content="github+hexo制作的个人博客的主题更换及美化">
@@ -201,13 +201,14 @@
 </code></pre><blockquote>
 <p>这个命令要在博客文件夹的根目录右击鼠标打开Git Bash输入命令，其中themes/indigo就是会在博客文件夹根目录中的themes新建一个indigo文件夹存放clone下来的主题，以后的主题通常都是存放在这个目录下。<br>通俗来说就是这样git clone +通过主题的github中获取的URL+ +themes/indigo</p>
 </blockquote>
-<p>下图是获取URL的方式：<br><figure class="image-bubble">
+<p>下图是获取URL的方式：</p>
+<figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
                     <img src="http://oqlrsmf3l.bkt.clouddn.com/image/blog/github+hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BC%98%E5%8C%96hexo%E4%B8%8B%E8%BD%BD%E4%B8%BB%E9%A2%98.png" alt="获取URL" title="">
                 </div>
                 <div class="image-caption">获取URL</div>
-            </figure></p>
+            </figure>
 <h3 id="依赖安装"><a href="#依赖安装" class="headerlink" title="依赖安装"></a>依赖安装</h3><p>教程中的“切换主题”我没有懂，似乎不做也行，没有切换主题的效果。直接到依赖安装，安装一些插件。</p>
 <h4 id="安装Less"><a href="#安装Less" class="headerlink" title="安装Less"></a>安装Less</h4><p>主题默认使用 less 作为 css 预处理工具。</p>
 <pre><code>npm install hexo-renderer-less --save
@@ -235,13 +236,14 @@
 <pre><code>layout: categories
  comments: false
  ---
-</code></pre><p>会自动生成文件夹 如图：<br><figure class="image-bubble">
+</code></pre><p>会自动生成文件夹 如图：</p>
+<figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
                     <img src="http://oqlrsmf3l.bkt.clouddn.com/image/blog/github+hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BC%98%E5%8C%96source%E6%96%87%E4%BB%B6%E5%A4%B9%E4%BB%8B%E7%BB%8D.png" alt="source文件夹介绍" title="">
                 </div>
                 <div class="image-caption">source文件夹介绍</div>
-            </figure></p>
+            </figure>
 <h3 id="切换主题"><a href="#切换主题" class="headerlink" title="切换主题"></a>切换主题</h3><p>主题配置好之后就等着主题的切换了，下面来切换主题</p>
 <h4 id="文件清理"><a href="#文件清理" class="headerlink" title="文件清理"></a>文件清理</h4><p>清理之前在public文件夹中生成的文件</p>
 <pre><code>hexo clean
@@ -256,24 +258,32 @@
 <h4 id="配置介绍"><a href="#配置介绍" class="headerlink" title="配置介绍"></a>配置介绍</h4><p>介绍一下配置文件的用处，<a href="https://github.com/yscoder/hexo-theme-indigo/wiki/%E9%85%8D%E7%BD%AE" target="_blank" rel="external">这里</a>已经介绍的很详细了。</p>
 <h4 id="添加评论"><a href="#添加评论" class="headerlink" title="添加评论"></a>添加评论</h4><p>重点来了，因为某些情况，评论这一块我搞了好长一段时间，先来说一下添加评论吧，我这里添加的是第三方评论系统来必力。</p>
 <h5 id="评论系统的选择"><a href="#评论系统的选择" class="headerlink" title="评论系统的选择"></a>评论系统的选择</h5><p>由于主题之实现了多说和disqus的第三方评论功能，这里不配置<br>因为多说<strong>6月份要关闭了</strong>；disqus需要翻墙访问才行；还有友言不支持https协议，因为github使用的是https协议;网易云跟帖需要域名才行，所以Github Page不能用这个；搜狐畅言需要备案，更麻烦；其中还有一些像gitment和HashOver这两个没有去研究，不知道怎样。所以现在还是用了来必力，来必力<strong>的缺点就是加载有点慢</strong>。这里是<a href="http://thief.one/2017/03/03/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/" target="_blank" rel="external">原链接</a>。</p>
+</blockquote>
 <h5 id="indigo模版添加来必力"><a href="#indigo模版添加来必力" class="headerlink" title="indigo模版添加来必力"></a>indigo模版添加来必力</h5><p>在indigo主题模版中添加来必力评论系统。</p>
 <h6 id="注册来必力"><a href="#注册来必力" class="headerlink" title="注册来必力"></a>注册来必力</h6><p>进入<a href="https://livere.com/" target="_blank" rel="external"> LiveRe</a>官网，注册账号。来必力是韩国的网站，注册的时候可能会有一些问题，多试几次。</p>
+<blockquote>
 <p>LiveRe(来必力) 有两个版本：</p>
-<p>City 版：是一款适合所有人使用的免费版本；<br>Premium 版：是一款能够帮助企业实现自动化管理的多功能收费版本。<br>我们 City 版就够了。<br>获取代码：<br><figure class="image-bubble">
+<p>City 版：是一款适合所有人使用的免费版本；<br>Premium 版：是一款能够帮助企业实现自动化管理的多功能收费版本。<br>我们 City 版就够了。</p>
+</blockquote>
+<p>获取代码：</p>
+<figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
                     <img src="http://oqlrsmf3l.bkt.clouddn.com/image/blog/github+hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BC%98%E5%8C%96livere-get-code.png" alt="获取代码" title="">
                 </div>
                 <div class="image-caption">获取代码</div>
-            </figure></p>
-<h6 id="修改主题配置文件"><a href="#修改主题配置文件" class="headerlink" title="修改主题配置文件"></a>修改主题配置文件</h6><p>因为主题中没有配置来必力评论系统，所以我们要手动配置。<br>在插件目录“myblog\themes\indigo\layout_partial\plugins”下新建一个名为“livere.ejs”的文件，这就是来必力插件。<br><figure class="image-bubble">
+            </figure>
+<h6 id="修改主题配置文件"><a href="#修改主题配置文件" class="headerlink" title="修改主题配置文件"></a>修改主题配置文件</h6><p>因为主题中没有配置来必力评论系统，所以我们要手动配置。</p>
+<blockquote>
+<p>在插件目录“myblog\themes\indigo\layout_partial\plugins”下新建一个名为“livere.ejs”的文件，这就是来必力插件。</p>
+</blockquote>
+<figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
                     <img src="http://oqlrsmf3l.bkt.clouddn.com/image/blog/github+hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BC%98%E5%8C%96add_livere01.png" alt="新建livers.ejs插件" title="">
                 </div>
                 <div class="image-caption">新建livers.ejs插件</div>
-            </figure></p>
-</blockquote>
+            </figure>
 <pre><code>   &lt;% if (theme.livere_uid){ %&gt;
 &lt;!-- 来必力City版安装代码 --&gt;
 &lt;div id=&quot;lv-container&quot; data-id=&quot;city&quot; data-uid=&quot;MTAyMC8yODg4MC81NDUw&quot;&gt;
@@ -300,14 +310,15 @@
 </blockquote>
 <pre><code>&lt;%- partial(&apos;../plugins/livere&apos;) %&gt;
 </code></pre><blockquote>
-<p>修改Hexo的配置文件，主题目录“myblog\themes\indigo”下的“_config.yml”文件，在评论部分添加如下代码，如下：<br><figure class="image-bubble">
+<p>修改Hexo的配置文件，主题目录“myblog\themes\indigo”下的“_config.yml”文件，在评论部分添加如下代码，如下：</p>
+</blockquote>
+<figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
                     <img src="http://oqlrsmf3l.bkt.clouddn.com/image/blog/github+hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BC%98%E5%8C%96add_livere02.png" alt="修改comment.ejs" title="">
                 </div>
                 <div class="image-caption">修改comment.ejs</div>
-            </figure></p>
-</blockquote>
+            </figure>
 <pre><code>livere_uid: MTAyMC8yODg4MC81NDUw
 </code></pre><p>这样就完成了配置，更新一下即可。</p>
 <pre><code>hexo clean
@@ -321,7 +332,7 @@ hexo d
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2017-05-30T14:17:20.504Z" itemprop="dateUpdated">2017-05-30 22:17:20</time>
+    最后更新时间：<time datetime="2017-05-30T14:38:08.943Z" itemprop="dateUpdated">2017-05-30 22:38:08</time>
 </span><br>
 
 

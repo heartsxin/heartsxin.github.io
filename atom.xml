@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://heartsxin.github.io/"/>
-  <updated>2017-05-30T14:17:20.504Z</updated>
+  <updated>2017-05-30T14:38:08.943Z</updated>
   <id>https://heartsxin.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://heartsxin.github.io/2017/05/30/github-hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BC%98%E5%8C%96/"/>
     <id>https://heartsxin.github.io/2017/05/30/github-hexo博客的主题安装及优化/</id>
     <published>2017-05-30T10:34:59.000Z</published>
-    <updated>2017-05-30T14:17:20.504Z</updated>
+    <updated>2017-05-30T14:38:08.943Z</updated>
     
     <content type="html"><![CDATA[<p>之间通过github+hexo搭建个人博客虽然已经初步完成，但是页面却不是很美观，在<a href="https://hexo.io/themes/" target="_blank" rel="external">hexo官网</a>有很多比较不错的主题推荐，可以在上面选择自己喜欢的主题，然后进行相应的个性化修改，这是我使用的主题<a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank" rel="external">indigo</a>，下面我也是用这个主题作为教程。<br><a id="more"></a></p>
 <h2 id="主题安装"><a href="#主题安装" class="headerlink" title="主题安装"></a>主题安装</h2><p>选择一款自己喜欢的主题，这将成为你个人博客模版。<a href="https://github.com/yscoder/hexo-theme-indigo/wiki/%E5%AE%89%E8%A3%85" target="_blank" rel="external">这里是主题安装的教程</a>，下面是我安装时的经验及个人见解。</p>
@@ -29,13 +29,14 @@
 </code></pre><blockquote>
 <p>这个命令要在博客文件夹的根目录右击鼠标打开Git Bash输入命令，其中themes/indigo就是会在博客文件夹根目录中的themes新建一个indigo文件夹存放clone下来的主题，以后的主题通常都是存放在这个目录下。<br>通俗来说就是这样git clone +通过主题的github中获取的URL+ +themes/indigo</p>
 </blockquote>
-<p>下图是获取URL的方式：<br><figure class="image-bubble">
+<p>下图是获取URL的方式：</p>
+<figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
                     <img src="http://oqlrsmf3l.bkt.clouddn.com/image/blog/github+hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BC%98%E5%8C%96hexo%E4%B8%8B%E8%BD%BD%E4%B8%BB%E9%A2%98.png" alt="获取URL" title="">
                 </div>
                 <div class="image-caption">获取URL</div>
-            </figure></p>
+            </figure>
 <h3 id="依赖安装"><a href="#依赖安装" class="headerlink" title="依赖安装"></a>依赖安装</h3><p>教程中的“切换主题”我没有懂，似乎不做也行，没有切换主题的效果。直接到依赖安装，安装一些插件。</p>
 <h4 id="安装Less"><a href="#安装Less" class="headerlink" title="安装Less"></a>安装Less</h4><p>主题默认使用 less 作为 css 预处理工具。</p>
 <pre><code>npm install hexo-renderer-less --save
@@ -63,13 +64,14 @@
 <pre><code>layout: categories
  comments: false
  ---
-</code></pre><p>会自动生成文件夹 如图：<br><figure class="image-bubble">
+</code></pre><p>会自动生成文件夹 如图：</p>
+<figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
                     <img src="http://oqlrsmf3l.bkt.clouddn.com/image/blog/github+hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BC%98%E5%8C%96source%E6%96%87%E4%BB%B6%E5%A4%B9%E4%BB%8B%E7%BB%8D.png" alt="source文件夹介绍" title="">
                 </div>
                 <div class="image-caption">source文件夹介绍</div>
-            </figure></p>
+            </figure>
 <h3 id="切换主题"><a href="#切换主题" class="headerlink" title="切换主题"></a>切换主题</h3><p>主题配置好之后就等着主题的切换了，下面来切换主题</p>
 <h4 id="文件清理"><a href="#文件清理" class="headerlink" title="文件清理"></a>文件清理</h4><p>清理之前在public文件夹中生成的文件</p>
 <pre><code>hexo clean
@@ -84,24 +86,32 @@
 <h4 id="配置介绍"><a href="#配置介绍" class="headerlink" title="配置介绍"></a>配置介绍</h4><p>介绍一下配置文件的用处，<a href="https://github.com/yscoder/hexo-theme-indigo/wiki/%E9%85%8D%E7%BD%AE" target="_blank" rel="external">这里</a>已经介绍的很详细了。</p>
 <h4 id="添加评论"><a href="#添加评论" class="headerlink" title="添加评论"></a>添加评论</h4><p>重点来了，因为某些情况，评论这一块我搞了好长一段时间，先来说一下添加评论吧，我这里添加的是第三方评论系统来必力。</p>
 <h5 id="评论系统的选择"><a href="#评论系统的选择" class="headerlink" title="评论系统的选择"></a>评论系统的选择</h5><p>由于主题之实现了多说和disqus的第三方评论功能，这里不配置<br>因为多说<strong>6月份要关闭了</strong>；disqus需要翻墙访问才行；还有友言不支持https协议，因为github使用的是https协议;网易云跟帖需要域名才行，所以Github Page不能用这个；搜狐畅言需要备案，更麻烦；其中还有一些像gitment和HashOver这两个没有去研究，不知道怎样。所以现在还是用了来必力，来必力<strong>的缺点就是加载有点慢</strong>。这里是<a href="http://thief.one/2017/03/03/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/" target="_blank" rel="external">原链接</a>。</p>
+</blockquote>
 <h5 id="indigo模版添加来必力"><a href="#indigo模版添加来必力" class="headerlink" title="indigo模版添加来必力"></a>indigo模版添加来必力</h5><p>在indigo主题模版中添加来必力评论系统。</p>
 <h6 id="注册来必力"><a href="#注册来必力" class="headerlink" title="注册来必力"></a>注册来必力</h6><p>进入<a href="https://livere.com/" target="_blank" rel="external"> LiveRe</a>官网，注册账号。来必力是韩国的网站，注册的时候可能会有一些问题，多试几次。</p>
+<blockquote>
 <p>LiveRe(来必力) 有两个版本：</p>
-<p>City 版：是一款适合所有人使用的免费版本；<br>Premium 版：是一款能够帮助企业实现自动化管理的多功能收费版本。<br>我们 City 版就够了。<br>获取代码：<br><figure class="image-bubble">
+<p>City 版：是一款适合所有人使用的免费版本；<br>Premium 版：是一款能够帮助企业实现自动化管理的多功能收费版本。<br>我们 City 版就够了。</p>
+</blockquote>
+<p>获取代码：</p>
+<figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
                     <img src="http://oqlrsmf3l.bkt.clouddn.com/image/blog/github+hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BC%98%E5%8C%96livere-get-code.png" alt="获取代码" title="">
                 </div>
                 <div class="image-caption">获取代码</div>
-            </figure></p>
-<h6 id="修改主题配置文件"><a href="#修改主题配置文件" class="headerlink" title="修改主题配置文件"></a>修改主题配置文件</h6><p>因为主题中没有配置来必力评论系统，所以我们要手动配置。<br>在插件目录“myblog\themes\indigo\layout_partial\plugins”下新建一个名为“livere.ejs”的文件，这就是来必力插件。<br><figure class="image-bubble">
+            </figure>
+<h6 id="修改主题配置文件"><a href="#修改主题配置文件" class="headerlink" title="修改主题配置文件"></a>修改主题配置文件</h6><p>因为主题中没有配置来必力评论系统，所以我们要手动配置。</p>
+<blockquote>
+<p>在插件目录“myblog\themes\indigo\layout_partial\plugins”下新建一个名为“livere.ejs”的文件，这就是来必力插件。</p>
+</blockquote>
+<figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
                     <img src="http://oqlrsmf3l.bkt.clouddn.com/image/blog/github+hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BC%98%E5%8C%96add_livere01.png" alt="新建livers.ejs插件" title="">
                 </div>
                 <div class="image-caption">新建livers.ejs插件</div>
-            </figure></p>
-</blockquote>
+            </figure>
 <pre><code>   &lt;% if (theme.livere_uid){ %&gt;
 &lt;!-- 来必力City版安装代码 --&gt;
 &lt;div id=&quot;lv-container&quot; data-id=&quot;city&quot; data-uid=&quot;MTAyMC8yODg4MC81NDUw&quot;&gt;
@@ -128,14 +138,15 @@
 </blockquote>
 <pre><code>&lt;%- partial(&apos;../plugins/livere&apos;) %&gt;
 </code></pre><blockquote>
-<p>修改Hexo的配置文件，主题目录“myblog\themes\indigo”下的“_config.yml”文件，在评论部分添加如下代码，如下：<br><figure class="image-bubble">
+<p>修改Hexo的配置文件，主题目录“myblog\themes\indigo”下的“_config.yml”文件，在评论部分添加如下代码，如下：</p>
+</blockquote>
+<figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
                     <img src="http://oqlrsmf3l.bkt.clouddn.com/image/blog/github+hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BC%98%E5%8C%96add_livere02.png" alt="修改comment.ejs" title="">
                 </div>
                 <div class="image-caption">修改comment.ejs</div>
-            </figure></p>
-</blockquote>
+            </figure>
 <pre><code>livere_uid: MTAyMC8yODg4MC81NDUw
 </code></pre><p>这样就完成了配置，更新一下即可。</p>
 <pre><code>hexo clean
@@ -153,11 +164,11 @@ hexo d
       <category term="study" scheme="https://heartsxin.github.io/categories/study/"/>
     
     
+      <category term="study" scheme="https://heartsxin.github.io/tags/study/"/>
+    
       <category term="github" scheme="https://heartsxin.github.io/tags/github/"/>
     
       <category term="hexo" scheme="https://heartsxin.github.io/tags/hexo/"/>
-    
-      <category term="study" scheme="https://heartsxin.github.io/tags/study/"/>
     
   </entry>
   
@@ -166,7 +177,7 @@ hexo d
     <link href="https://heartsxin.github.io/2017/05/29/github-hexo%E5%88%B6%E4%BD%9C%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>https://heartsxin.github.io/2017/05/29/github-hexo制作个人博客/</id>
     <published>2017-05-29T12:24:59.000Z</published>
-    <updated>2017-05-30T14:31:51.185Z</updated>
+    <updated>2017-05-30T14:41:16.710Z</updated>
     
     <content type="html"><![CDATA[<p>通过github的代码托管和hexo搭建个人博客<br><a id="more"></a></p>
 <h2 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h2><p>  首先要把准备工作做好，前期的账号注册、软件安装、环境搭建</p>
@@ -226,15 +237,15 @@ npm config set cache &quot;D:\Develop\nodejs\node_cache&quot;
             </figure>
 <p>通过npm安装模块时都是去国外的镜像下载的，有的时候由于网络原因会导致安装模块失败，静静等待吧…</p>
 <h3 id="安装Hexo-1"><a href="#安装Hexo-1" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p>搭建好以上环境之后打开Git Bssh然后输入命令</p>
-<h4 id="第一步安装Hexo"><a href="#第一步安装Hexo" class="headerlink" title="第一步安装Hexo"></a>第一步安装Hexo</h4><p>可以先去<a href="https://hexo.io/zh-cn/" target="_blank" rel="external">Hexo</a>官网去看看，下面的命令就是安装Hexo</p>
+<h4 id="安装Hexo-2"><a href="#安装Hexo-2" class="headerlink" title="安装Hexo"></a>安装Hexo</h4><p>可以先去<a href="https://hexo.io/zh-cn/" target="_blank" rel="external">Hexo</a>官网去看看，下面的命令就是安装Hexo</p>
 <pre><code>npm install hexo-cli -g #安装hexo
-</code></pre><h4 id="第二步初始化"><a href="#第二步初始化" class="headerlink" title="第二步初始化"></a>第二步初始化</h4><p>现在新建你博客要存储的文件夹，如：“某位置/blog”，然后在该文件夹下右击鼠标，选择Git Bash Here，然后输入如下命令：</p>
-<h5 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h5><pre><code>hexo init
+</code></pre><h4 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h4><p>现在新建你博客要存储的文件夹，如：“某位置/blog”，然后在该文件夹下右击鼠标，选择Git Bash Here，然后输入如下命令：</p>
+<h5 id="初始化-1"><a href="#初始化-1" class="headerlink" title="初始化"></a>初始化</h5><pre><code>hexo init
 </code></pre><p>然后输入</p>
 <pre><code>npm install
 </code></pre><h5 id="生成静态页面"><a href="#生成静态页面" class="headerlink" title="生成静态页面"></a>生成静态页面</h5><p>输入以下代码生成静态html代码，它是“hexo generate”的简写</p>
 <pre><code>hexo g 
-</code></pre><h5 id="本地启动"><a href="#本地启动" class="headerlink" title="本地启动"></a>本地启动</h5><p>输入以下代码本地启动服务，它是”hexo server“ 的简写</p>
+</code></pre><h4 id="本地启动"><a href="#本地启动" class="headerlink" title="本地启动"></a>本地启动</h4><p>输入以下代码本地启动服务，它是”hexo server“ 的简写</p>
 <pre><code>hexo s
 </code></pre><p>此时个人博客已经初步建成，在浏览器输入<a href="https://localhost:4000" target="_blank" rel="external"> https://localhost:4000</a>即可访问你的博客了，试试看…<br>它可能是这个样子，如下：<br><figure class="image-bubble">
                 <div class="img-lightbox">
@@ -243,7 +254,7 @@ npm config set cache &quot;D:\Develop\nodejs\node_cache&quot;
                 </div>
                 <div class="image-caption">enter image description here</div>
             </figure><br>这样已经初步完成个人博客的初步搭建</p>
-<h5 id="上传至github"><a href="#上传至github" class="headerlink" title="上传至github"></a>上传至github</h5><p>修改博客根目录下的_config.yml，修改 Deployment部分。</p>
+<h4 id="上传至github"><a href="#上传至github" class="headerlink" title="上传至github"></a>上传至github</h4><p>修改博客根目录下的_config.yml，修改 Deployment部分。</p>
 <pre><code># Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 # ssh://git@github.com/wenjunoy/wenjunoy.github.io
@@ -251,7 +262,7 @@ deploy:
 type: git
 repo: ssh://git@github.com/wenjunoy/wenjunoy.github.io ##这个是你的仓库地址
 branch: master
-</code></pre><h5 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h5><pre><code>hexo d
+</code></pre><h4 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h4><pre><code>hexo d
 </code></pre><p>成功之后，在浏览器中输入<a href="https://username.github.io/即可访问你的个人博客了，username是你的github用户名。" target="_blank" rel="external">https://username.github.io/即可访问你的个人博客了，username是你的github用户名。</a></p>
 <p>##总结<br>这样就可以拥有一个你的个人博客了，博客可以在后续学习中慢慢的完善。</p>
 ]]></content>
