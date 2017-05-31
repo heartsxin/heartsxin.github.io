@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>heartsxin</title>
-  <subtitle>heartsxin的博客</subtitle>
+  <subtitle>哈特斯星，茫茫宇宙中的一颗星</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://heartsxin.github.io/"/>
@@ -168,9 +168,9 @@ hexo d
     
       <category term="study" scheme="https://heartsxin.github.io/tags/study/"/>
     
-      <category term="github" scheme="https://heartsxin.github.io/tags/github/"/>
-    
       <category term="hexo" scheme="https://heartsxin.github.io/tags/hexo/"/>
+    
+      <category term="github" scheme="https://heartsxin.github.io/tags/github/"/>
     
   </entry>
   
@@ -278,9 +278,9 @@ branch: master
       <category term="study" scheme="https://heartsxin.github.io/categories/study/"/>
     
     
-      <category term="github" scheme="https://heartsxin.github.io/tags/github/"/>
-    
       <category term="hexo" scheme="https://heartsxin.github.io/tags/hexo/"/>
+    
+      <category term="github" scheme="https://heartsxin.github.io/tags/github/"/>
     
   </entry>
   
