@@ -166,7 +166,7 @@
     
     <aside class="post-widget">
         <nav class="post-toc-wrap" id="post-toc">
-            <h4>文章导航</h4>
+            <h4>TOC</h4>
             <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#主题安装"><span class="post-toc-text">主题安装</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#主题安装-1"><span class="post-toc-text">主题安装</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#依赖安装"><span class="post-toc-text">依赖安装</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#安装Less"><span class="post-toc-text">安装Less</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#安装Feed"><span class="post-toc-text">安装Feed</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Json-content"><span class="post-toc-text">Json-content</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#QRCode"><span class="post-toc-text">QRCode</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Hexo配置修改"><span class="post-toc-text">Hexo配置修改</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Hexo目录介绍"><span class="post-toc-text">Hexo目录介绍</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Hexo新建文件"><span class="post-toc-text">Hexo新建文件</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#开启标签页"><span class="post-toc-text">开启标签页</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#开启分类页"><span class="post-toc-text">开启分类页</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#切换主题"><span class="post-toc-text">切换主题</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#文件清理"><span class="post-toc-text">文件清理</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#生成静态文件"><span class="post-toc-text">生成静态文件</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#开启本地服务"><span class="post-toc-text">开启本地服务</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#上传到github"><span class="post-toc-text">上传到github</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#主题优化"><span class="post-toc-text">主题优化</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#配置介绍"><span class="post-toc-text">配置介绍</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#添加评论"><span class="post-toc-text">添加评论</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#评论系统的选择"><span class="post-toc-text">评论系统的选择</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#indigo模版添加来必力"><span class="post-toc-text">indigo模版添加来必力</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#注册来必力"><span class="post-toc-text">注册来必力</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#修改主题配置文件"><span class="post-toc-text">修改主题配置文件</span></a></li></ol></li></ol></li></ol></li></ol></li></ol>
         </nav>
     </aside>
@@ -189,8 +189,6 @@
     <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
 </span>
 
-
-            
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
@@ -383,7 +381,6 @@ hexo d
           <i class="icon icon-qq"></i>
         </a>
       </li>
-	  <!-- 注释了facebook和twitter
       <li>
         <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://heartsxin.github.io/2017/05/30/github-hexo博客的主题安装及优化/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
@@ -394,7 +391,6 @@ hexo d
           <i class="icon icon-twitter"></i>
         </a>
       </li>
-	    -->
       <li>
         <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://heartsxin.github.io/2017/05/30/github-hexo博客的主题安装及优化/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
@@ -416,7 +412,14 @@ hexo d
     </div>
 
     
-<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2017/06/02/实用工具及网站/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">实用工具及网站</h4>
+      </a>
+    </div>
   
 
   
@@ -479,21 +482,23 @@ hexo d
         谢谢大爷~
         <i class="icon icon-quote-right"></i>
     </h3>
-    <ul class="reward-items">
+    <div class="reward-content">
         
-        <li>
-            <img src="/img/wechat.jpg" title="微信打赏二维码" alt="微信打赏二维码">
-            <p>微信</p>
-        </li>
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
         
-
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
         
-        <li>
-            <img src="/img/alipay.jpg" title="支付宝打赏二维码" alt="支付宝打赏二维码">
-            <p>支付宝</p>
-        </li>
-        
-    </ul>
+    </div>
 </div>
 
 
@@ -517,15 +522,15 @@ hexo d
             
                 <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
             
-            <span>博客内容遵循<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
         </p>
     </div>
     <div class="bottom">
-        <p>
-			<!-- 注释了
-            <span>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></span>
-            -->
-			<span>heartsxin &copy; 2017</span>
+        <p><span>heartsxin &copy; 2017</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
         </p>
     </div>
 </footer>
@@ -553,7 +558,6 @@ hexo d
           <i class="icon icon-qq"></i>
         </a>
       </li>
-	  <!-- 注释了facebook和twitter
       <li>
         <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://heartsxin.github.io/2017/05/30/github-hexo博客的主题安装及优化/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
@@ -564,7 +568,6 @@ hexo d
           <i class="icon icon-twitter"></i>
         </a>
       </li>
-	    -->
       <li>
         <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://heartsxin.github.io/2017/05/30/github-hexo博客的主题安装及优化/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
@@ -586,7 +589,6 @@ hexo d
     <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
 <script>
 var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
-
 
 
 </script>

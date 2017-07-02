@@ -177,8 +177,6 @@
 </span>
 
 
-            
-
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
             
@@ -237,7 +235,6 @@
           <i class="icon icon-qq"></i>
         </a>
       </li>
-	  <!-- 注释了facebook和twitter
       <li>
         <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://heartsxin.github.io/2017/05/29/MarkDown学习笔记/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
@@ -248,7 +245,6 @@
           <i class="icon icon-twitter"></i>
         </a>
       </li>
-	    -->
       <li>
         <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://heartsxin.github.io/2017/05/29/MarkDown学习笔记/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
@@ -333,21 +329,23 @@
         谢谢大爷~
         <i class="icon icon-quote-right"></i>
     </h3>
-    <ul class="reward-items">
+    <div class="reward-content">
         
-        <li>
-            <img src="/img/wechat.jpg" title="微信打赏二维码" alt="微信打赏二维码">
-            <p>微信</p>
-        </li>
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
         
-
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
         
-        <li>
-            <img src="/img/alipay.jpg" title="支付宝打赏二维码" alt="支付宝打赏二维码">
-            <p>支付宝</p>
-        </li>
-        
-    </ul>
+    </div>
 </div>
 
 
@@ -371,15 +369,15 @@
             
                 <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
             
-            <span>博客内容遵循<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
         </p>
     </div>
     <div class="bottom">
-        <p>
-			<!-- 注释了
-            <span>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></span>
-            -->
-			<span>heartsxin &copy; 2017</span>
+        <p><span>heartsxin &copy; 2017</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
         </p>
     </div>
 </footer>
@@ -407,7 +405,6 @@
           <i class="icon icon-qq"></i>
         </a>
       </li>
-	  <!-- 注释了facebook和twitter
       <li>
         <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://heartsxin.github.io/2017/05/29/MarkDown学习笔记/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
@@ -418,7 +415,6 @@
           <i class="icon icon-twitter"></i>
         </a>
       </li>
-	    -->
       <li>
         <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://heartsxin.github.io/2017/05/29/MarkDown学习笔记/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
@@ -440,7 +436,6 @@
     <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
 <script>
 var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
-
 
 
 </script>
