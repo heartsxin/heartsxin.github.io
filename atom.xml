@@ -188,9 +188,9 @@ hexo d
     
       <category term="study" scheme="https://heartsxin.github.io/tags/study/"/>
     
-      <category term="github" scheme="https://heartsxin.github.io/tags/github/"/>
-    
       <category term="hexo" scheme="https://heartsxin.github.io/tags/hexo/"/>
+    
+      <category term="github" scheme="https://heartsxin.github.io/tags/github/"/>
     
   </entry>
   
@@ -298,9 +298,9 @@ branch: master
       <category term="study" scheme="https://heartsxin.github.io/categories/study/"/>
     
     
-      <category term="github" scheme="https://heartsxin.github.io/tags/github/"/>
-    
       <category term="hexo" scheme="https://heartsxin.github.io/tags/hexo/"/>
+    
+      <category term="github" scheme="https://heartsxin.github.io/tags/github/"/>
     
   </entry>
   
