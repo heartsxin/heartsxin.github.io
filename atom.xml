@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://heartsxin.coding.me/"/>
-  <updated>2017-08-05T04:41:04.101Z</updated>
+  <updated>2017-08-05T05:07:48.387Z</updated>
   <id>http://heartsxin.coding.me/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://heartsxin.coding.me/2017/08/05/%E5%AD%A6%E4%B9%A0%E4%BD%BF%E7%94%A8jquery-ajax%EF%BC%8801%EF%BC%89/"/>
     <id>http://heartsxin.coding.me/2017/08/05/学习使用jquery-ajax（01）/</id>
     <published>2017-08-05T03:55:48.000Z</published>
-    <updated>2017-08-05T04:41:04.101Z</updated>
+    <updated>2017-08-05T05:07:48.387Z</updated>
     
     <content type="html"><![CDATA[<p>第一次用以印象笔记己东西，现在在做的项目让我学到了一些东西，这是对jquery+ajax有了一些初步的了解，大概明白了Jquery和Ajax的一些基础用法Jquery，先举了例子，例子如下：<br><a id="more"></a></p>
 <h2 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h2><h3 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h3><h4 id="导入jquery包"><a href="#导入jquery包" class="headerlink" title="导入jquery包"></a>导入jquery包</h4><p><strong>有两种方式导入jquery包</strong></p>
@@ -51,10 +51,16 @@
     
     <summary type="html">
     
-      &lt;p&gt;第一次用以印象笔记己东西，现在在做的项目让我学到了一些东西，这是对jquery+ajax有了一些初步的了解，大概明白了Jquery和Ajax的一些基础用法Jquery，先举了例子，例子如下：&lt;br&gt;
+      学习使用jquery+ajax（01）
     
     </summary>
     
+      <category term="study" scheme="http://heartsxin.coding.me/categories/study/"/>
+    
+    
+      <category term="jquery" scheme="http://heartsxin.coding.me/tags/jquery/"/>
+    
+      <category term="ajax" scheme="http://heartsxin.coding.me/tags/ajax/"/>
     
   </entry>
   
